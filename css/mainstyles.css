@@ -50,40 +50,131 @@
     font-family: 'Montserrat', sans-serif;
     top: 40;
     text-align:center;
+    z-index:+3;
 }
 #about-left{
     position:relative;
     float:left;
-    top:100px;
-    left: 200px;
+    top:200px;
+    left: 300px;
     width:50%;
     height:480px;
 }
 #about-right{
     position:relative;
     float:right;
-    color:hsl(0,0%,20%);
+    color:hsl(0,0%,18%);
     font-size:15px;
     letter-spacing: 4px;
     line-height: 28px;
     font-family: 'Montserrat', sans-serif;
-    top:200px;
+    top:300px;
     right: 200px;
-    width:35%;
+    width:30%;
     height:480px;
 }
+#about-text{
+    position:relative;
+    color:hsl(0,0%,20%);
+    font-size:55px;
+    letter-spacing: 10px;
+    top:-280px;
+    left:200px;
+    font-family: 'DM Serif Text', serif;
+}
 #pink-rect{
-    background-color:hsl(12,34.1,82.2);
+    background-color:hsl(12,34.1%,82.2%);
     display:flex;
-    top:100px;
-    left: 100px;
-    width:750px;
-    height:300px;
+    top:500px;
+    left: 600px;
+    width:250px;
+    height:460px;
     float:left;
-  /* background-image:linear-gradient(to bottom left, hsla(20, 90%, 80%, .7), hsla(31, 100%, 73%, 0)); */
+    /* background-image:linear-gradient(to bottom left,hsl(12,34.1,82.2), hsl(12,34.1,82.2));  */
+}
+#prof-pic{
+    position: relative;
+    left:-450px;
+    top:10px;
 }
 #content{
     font-size:40px;
 }
-  
-  
+#portfolio-header{
+    position: relative;
+    left: 280px;
+    top:400px;
+    font-size:55px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    color:hsl(350,100%,35.9%);
+    display: inline;
+}
+#portfolio-secondary-header{
+    position: relative;
+    left: 280px;
+    top:400px;
+    color:hsl(350,100%,35.9%);
+    font-size:20px;
+    letter-spacing: 5px;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+}
+#faces-left{
+    position: relative;
+    float:left;
+    left:280px;
+    top:450px;
+}
+#concepts-right{
+    position: relative;
+    float:right;
+    right:280px;
+    top:450px;
+}
+#contacts{
+    position: relative;
+    top:150%;
+}
+#green-blob{
+    position:relative;
+    left:-400;
+}
+
+#contacts-header{
+    position: relative;
+    color:hsl(0,0%,20%);
+    font-size:55px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    left:100;
+}
+#contacts-text{
+    position: relative;
+    color:hsl(0,0%,20%);
+    top: 40;
+    left:100;
+    width:60%;
+    color:hsl(0,0%,18%);
+    font-size:15px;
+    letter-spacing: 4px;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+#pink-blob{
+    position:relative;
+    right:-800;
+}
+
+/* faces page */
+#faces-page-wip{
+    position:relative;
+    top:200px;
+    text-align:center;
+    color:hsl(0,0%,18%);
+    font-size:15px;
+    letter-spacing: 4px;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+}

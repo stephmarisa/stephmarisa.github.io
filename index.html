@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- Header -->
-        <div class = "intro">
+        <div class = "intro" id="beginning">
             <img src = "images/home/mainBackground.jpg" alt = "banner" width = 100% id ="mainBkg">
             <div id = "intro-text">
                 STEPHANIE CHUI 
@@ -25,16 +25,55 @@
             <a href="javascript:void(0)">contact</a>
           </div> -->
         <div class = "flex justify-content-between" id = "navbar">
-            about | portfolio | contact
+            <a href="#about"> about </a>
+            <a href = "#portfolio"> portfolio </a>
+            <a href = "#contact"> contacts </a>
         </div>
-        <div id="about-left">
-           <div id="pink-rect">
-            <img src = "images/home/aboutmepic.png" alt = "Stephanie"  height="450px" class ="a-pic" id="profpic">
-           </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div id="about-left">
+            <div id="pink-rect">
+            </div>
+            <img src = "images/home/aboutmepic.png" alt = "Stephanie"  height="460px" class ="a-pic" id="prof-pic">
+            <div id="about-text">ABOUT.</div>
+            </div>
+            <div id="about-right">
+                Hi, I'm Stephanie. <br> <br>I am a current senior at Washington University in St. Louis majoring in Computer Science and Applied Mathematics and minoring in Dance. Most of my work combines unconvential mediums and explores the intersection of art, science, and technology. 
+            </div>
         </div>
-        <div id="about-right">
-            Hi, I'm Stephanie. <br> <br>I am a current senior at Washington University in St. Louis majoring in Computer Science and Applied Mathematics and minoring in Dance. Most of my work combines unconvential mediums and explores the intersection of art, science and technology. 
+
+        <!--Portfolio Section -->
+        <div id="portfolio">
+            <div id="portfolio-header">
+                PORTFOLIO. 
+            </div>
+            <div id = "portfolio-secondary-header">
+                check out some of my work!
+            </div>
+            <div> 
+                <a href= "in-progress.html">
+                    <img src = "images/home/faces-subsection.png" alt="FACES" width = 350px id = "faces-left">
+                </a>
+                <a href = "in-progress.html"> 
+                    <img src = "images/home/concepts-subsection.png" alt="FACES" width = 350px id = "concepts-right">
+                </a>
+            </div>
         </div>
+
+        <!--Contact Section-->
+        <div id="contacts"> 
+            <img src = "images/home/blob1-green.png" alt="FACES" width = 350px id = "green-blob">
+            <div id="contacts-header">
+                CONTACT.
+            </div>
+            <div id="contacts-text">
+                PLEASE REACH OUT IF YOU WOULD LIKE TO COLLAB AND CREATE WITH ME! <br> <br> EMAIL:  S.CHUI@WUSTL.EDU
+                <br>INSTAGRAM:  STEPH.CHUI
+            </div>
+            <img src = "images/home/blob2-pink.png" alt="FACES" width = 350px id = "pink-blob">
+        </div>
+
           <script src = "scripts.js"></script>
     </body>
 </html>
