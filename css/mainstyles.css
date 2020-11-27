@@ -2,6 +2,13 @@
     padding:0;
     margin:0;
  }
+ a{
+     color:hsl(0,0%,20%);
+     text-decoration: none;
+ }
+ a:hover{
+     color:hsl(0,0%,50%);
+ }
 .intro{
     top:0;
 }
