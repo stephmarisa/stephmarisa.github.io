@@ -197,6 +197,24 @@
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;  
 }
+.faces-page-secondary{
+    position: relative;
+    left: 100px;
+    top:150px;
+    font-size:55px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    color:hsl(0,0%,20%);
+}
+#faces-nav-bar{
+    position:fixed;
+    top:40px;
+    left: 90%;
+    color:hsl(0,0%,18%);
+    font-size:15px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
 #faces-page-wip{
     position:relative;
     top:200px;
@@ -217,15 +235,6 @@
     color:hsl(350,100%,35.9%);
     /* display: inline; */
 }
-#faces-page-secondary{
-    position: relative;
-    left: 100px;
-    top:150px;
-    font-size:55px;
-    letter-spacing: 10px;
-    font-family: 'DM Serif Text', serif;
-    color:hsl(0,0%,20%);
-}
 #entry-1{
     position:relative;
     top:360px;
@@ -239,6 +248,11 @@
 #entry-3{
     position:relative;
     top:360px;
+    left:20%
+}
+#entry-4{
+    position:relative;
+    top:300px;
     left:20%
 }
 #saran{
@@ -274,4 +288,36 @@
 #pomegranate{
     position:relative;
     top:-150;
+}
+#colour-text{
+    position:relative;
+    top:530;
+    left: 0;
+}
+#colour{
+    position:relative;
+    top:200;
+    left: 200;
+}
+#gallery-section{
+    position:relative;
+    top:800px;
+}
+#gallery-header{
+    position: relative;
+    left: 100px;
+    font-size:55px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    color:hsl(0,0%,20%);
+}
+#makeup-gallery{
+    position:relative;
+    top: 900px;
+    left:20%;
+}
+#bottom-padding{
+    position:relative;
+    top:1000px;
+    height:100px;
 }
