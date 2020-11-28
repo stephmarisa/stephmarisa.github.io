@@ -23,7 +23,7 @@
     width: 100%;
   }
 .sticky + .content {
-    padding-top: 800px;
+    padding-top: 100;
   }
 .scroll-container{
     height: 1000;
@@ -206,6 +206,11 @@ section{
     position:relative;
     right:-800;
 }
+#small-padding{
+    position:relative;
+    top:790;
+    height:100px;
+}
 
 /* faces page */
 .faces-description{
@@ -242,6 +247,15 @@ section{
     font-size:15px;
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
+}
+#faces-third-header{
+    position:relative;
+    color:hsl(0,0%,20%);
+    font-size:22px;
+    letter-spacing: 9px;
+    font-family: 'Montserrat', sans-serif;
+    left:100;
+    top: 180;
 }
 #faces-page-wip{
     position:relative;
@@ -286,6 +300,7 @@ section{
 #saran{
     position:relative;
     top:-170;
+    
 }
 #saran-text{
     position:relative;
@@ -354,3 +369,19 @@ section{
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
 }
+/* section #entry-1 {
+    opacity: 0.1;
+}
+  
+section.is-visible #entry-1 {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+section #entry-2 {
+    opacity: 0.1;
+}
+  
+section.is-visible #entry-2 {
+    opacity: 1;
+    transition: opacity 500ms;
+} */
