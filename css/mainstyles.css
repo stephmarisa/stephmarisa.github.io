@@ -1,6 +1,8 @@
  body{
     padding:0;
     margin:0;
+    /* background-color: rgb(255, 251, 246); */
+    background-color:white;
  }
  a{
      color:hsl(0,0%,20%);
@@ -134,11 +136,17 @@
     left:280px;
     top:450px;
 }
+#faces-left:hover{
+    opacity:.75;
+}
 #concepts-right{
     position: relative;
     float:right;
     right:280px;
     top:450px;
+}
+#concepts-right:hover{
+    opacity:.75;
 }
 #contacts{
     position: relative;
@@ -175,6 +183,20 @@
 }
 
 /* faces page */
+.faces-description{
+    color:hsl(0,0%,18%);
+    font-size:15px;
+    letter-spacing: 4px;
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+.publication{
+    color:hsl(350,100%,35.9%);
+    left:28%;
+    font-size:15px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;  
+}
 #faces-page-wip{
     position:relative;
     top:200px;
@@ -184,4 +206,72 @@
     letter-spacing: 4px;
     line-height: 28px;
     font-family: 'Montserrat', sans-serif;
+}
+#faces-page-header{
+    position: relative;
+    left: 100px;
+    top:50px;
+    font-size:65px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    color:hsl(350,100%,35.9%);
+    /* display: inline; */
+}
+#faces-page-secondary{
+    position: relative;
+    left: 100px;
+    top:150px;
+    font-size:55px;
+    letter-spacing: 10px;
+    font-family: 'DM Serif Text', serif;
+    color:hsl(0,0%,20%);
+}
+#entry-1{
+    position:relative;
+    top:360px;
+    left:20%
+}
+#entry-2{
+    position:relative;
+    top:360px;
+    left:25%
+}
+#entry-3{
+    position:relative;
+    top:360px;
+    left:20%
+}
+#saran{
+    position:relative;
+    top:-170;
+}
+#saran-text{
+    position:relative;
+    color:hsl(0,0%,18%);
+    left:28%;
+    font-size:15px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+#touch-text{
+    position:relative;
+    color:hsl(0,0%,18%);
+    left:-50;
+    font-size:15px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    top:470px;
+}
+#touch{
+    position:relative;
+    top:-150;
+}
+#pomegranates-text{
+    position:relative;
+    top:200;
+    left: 400;
+}
+#pomegranate{
+    position:relative;
+    top:-150;
 }
