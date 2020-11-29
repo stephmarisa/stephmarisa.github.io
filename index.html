@@ -7,12 +7,13 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat&family=Playfair+Display:wght@400;500&family=Roboto&family=Rozha+One&family=Vidaloka&display=swap" rel="stylesheet">
         <!-- styling-->
         <link rel = "stylesheet" href = "css/mainstyles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- Header -->
         <div>
-            <div class = "intro" id="beginning">
-                <img src = "images/home/mainBackground.jpg" alt = "banner" width = 100% id ="mainBkg">
+            <div class = "intro" id="beginning" data-aos = "fade-left">
+                <img src = "images/home/mainBackground.jpg" alt = "banner" id ="mainBkg">
                 <div id = "intro-text">
                     STEPHANIE CHUI 
                 </div>
@@ -35,11 +36,11 @@
         </div>
 
         <!-- About Section -->
-        <div id="about">
+        <div id="about" data-aos = "fade-up">
             <div id="about-left">
             <div id="pink-rect">
             </div>
-            <img src = "images/home/aboutmepic.png" alt = "Stephanie"  height="460px" class ="a-pic" id="prof-pic">
+            <img src = "images/home/aboutmepic.png" alt = "Stephanie"  height="460px" class ="a-pic" id="prof-pic" data-aos = "fade-left">
             <div id="about-text">ABOUT.</div>
             </div>
             <div id="about-right">
@@ -53,23 +54,23 @@
 
         <!--Portfolio Section -->
             <div id = "small-padding"></div>
-            <div id="portfolio-header">
+            <div id="portfolio-header" data-aos = "fade-down">
                 PORTFOLIO. 
             </div>
-            <div id = "portfolio-secondary-header">
+            <div id = "portfolio-secondary-header" data-aos = "fade-down">
                 check out some of my work!
             </div>
             <div> 
-                <a href= "faces.html">
+                <a href= "faces.html" data-aos = "fade-left">
                     <img src = "images/home/faces-subsection.png" alt="FACES" width = 350px id = "faces-left">
                 </a>
-                <a href = "in-progress.html"> 
+                <a href = "in-progress.html" data-aos = "fade-right"> 
                     <img src = "images/home/concepts-subsection.png" alt="FACES" width = 350px id = "concepts-right">
                 </a>
             </div>
 
         <!--Contact Section-->
-        <div id="contacts"> 
+        <div id="contacts" data-aos = "fade-up"> 
             <img src = "images/home/blob1-green.png" alt="FACES" width = 350px id = "green-blob">
             <div id="contacts-header">
                 CONTACT.
@@ -80,6 +81,10 @@
             </div>
             <img src = "images/home/blob2-pink.png" alt="FACES" width = 350px id = "pink-blob">
         </div>
-          <script src = "scripts.js"></script>
+        <div id = "bottom-padding-main">
+            <a href = "#beginning">back to top</a>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src = "scripts.js"></script>
     </body>
 </html>
