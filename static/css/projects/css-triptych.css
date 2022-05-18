@@ -1,4 +1,13 @@
 
+/* Colors
+beige background: #F4F0DE
+blue: #758CA9
+pink: E7ADCA
+yellow: #F4C748
+green: #699C61
+burnt orange:
+*/
+
 /* Canvas set up */
 *{
     margin: 0px;
@@ -17,15 +26,16 @@ h1{
     width: 1200px;
 }
 .left-box{
+    border-radius: 10px;
     background-color:#F4F0DE;
     display:flex;
-    align-items: center;
     flex:1;
     border: 1px solid black;
     height: 500px;
     margin: 10px;
 }
 .middle-box{
+    border-radius: 10px;
     background-color:#F4F0DE;
     flex:1;
     border: 1px solid black;
@@ -33,6 +43,7 @@ h1{
     margin: 10px;
 }
 .right-box{
+    border-radius: 10px;
     background-color:#F4F0DE;
     flex:1;
     border: 1px solid black;
@@ -40,13 +51,13 @@ h1{
     margin: 10px;
 }
 
-/* Left Box */
 .person{
+    position: absolute;
     margin-left: 20px;
-    margin-top: -100px;
+    margin-top: 90px;
     width: 150px;
     height: 200px;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 .head{
@@ -54,7 +65,15 @@ h1{
     height: 70px;
     border-radius: 50%;
     border: 1px solid black;
+}
+.body-color-1, .body-color-1::after{
+    background-color: #F4C748; 
+}
+.body-color-2, .body-color-2::after{
     background-color: #E7ADCA;
+}
+.body-color-3, .body-color-3::after{
+    background-color:#D66938;
 }
 
 /* neck */
@@ -63,13 +82,100 @@ h1{
     position: absolute;
     width: 6px;
     height: 8px;
-    background:#E7ADCA;
     margin-top: 18px;
     margin-left: 30px;
     border: 1px solid black;
 }
+.head-1::after{
+    content:"";
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+.head-3::after{
+    content:"";
+    position: absolute;
+    width:28px;
+    height: 10px;
+    margin-left: 20px;
+    margin-top: 17px;
+    border: 1px solid black;
+    background-color: #E7ADCA;
+}
+/* .head-decoration-3::after{
+    background:#E7ADCA;
+} */
 
-.hair{
+/* hair panel 1 */
+.hair-1{
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -5px;
+    width: 84px;
+    height: 45px;
+    border-radius: 60px 60px 0 0;
+    /* border: 1px solid black; */
+    /* background-color: black; */
+}
+.bun-left, .bun-right{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.bun-left{
+    background-color: black;
+}
+.bun-right{
+    background-color: #758CA9;
+    margin-left: 60px;
+}
+.bangs-left{
+    position: absolute; 
+    background-color: #758CA9;
+    border: 1px solid black;
+    width: 40px;
+    height: 43px;
+    border-radius: 60px 0 0 0;
+}
+.bangs-right{
+    position: absolute; 
+    background-color: black;
+    border: 1px solid black;
+    width: 40px;
+    height: 43px;
+    margin-left: 40px;
+    border-radius: 0 60px 0 0;
+}
+.bang-strand-1, .bang-strand-2, .bang-strand-3, .bang-strand-4{
+    position: absolute; 
+    margin-left: 13px;
+    margin-top:25px;
+    width:1px;
+    height: 18px;
+    background-color: white;
+}
+.bang-strand-2{
+    margin-left: 28px;
+    margin-top: 33px;
+    height: 10px;
+}
+.bang-strand-3{
+    background-color: black;
+    margin-left: 28px;
+}
+.bang-strand-4{
+    background-color: black;
+    margin-top: 33px;
+    height: 10px;
+}
+
+/* hair panel 2 */
+.hair-2{
     position:absolute;
     margin-left: 20px;
     width: 30px;
@@ -92,6 +198,94 @@ h1{
 .strand-3{
     transform: rotate(25deg);
 }
+
+/* hair 3 */
+.background-hair-3{
+    position:absolute;
+    top: -8px;
+    border-top: 26px solid black;
+    border-radius: 50%;
+    width: 80px;
+    height:65px;
+}
+.hair-3{
+    position:absolute;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.hair-3-bang{
+    position:absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color:black;
+    width: 60px;
+    height: 27px;
+    top: 18px;
+    left:-5px;
+}
+.ponytail{
+    position: absolute;
+    margin-left: 30%;
+    background-color: black;
+    width: 15px;
+    height: 25px;
+    top: -5px;
+}
+.hairtie{
+    content:"";
+    background-color: #F4C748;
+    position:absolute;
+    width:15px;
+    height:6px;
+    top:2px;
+    left:14px;
+    border:1px solid black;
+}
+.strands-set{
+    position:absolute;
+    top: -10px;
+}
+.strand{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-top: 10px solid black;
+}
+.strand-1-left{
+    transform: rotate(-20deg);
+    top: 2px;
+    left:-5px;
+}
+.strand-2-left{
+    transform: rotate(15deg);
+    top:-5px;
+    left: -15px;
+}
+.strand-1-right{
+    transform: rotate(20deg);
+    top: 2px;
+    left:15px;
+}
+.strand-2-right{
+    transform: rotate(-15deg);
+    top:-5px;
+    left: 25px;
+}
+.strand-1-top{
+    transform: rotate(50deg);
+    top:-15px;
+    left:-15px;
+    width: 40px;
+}
+
+
+
+
 .eyes{
     display: flex;
     justify-content: center;
@@ -115,6 +309,9 @@ h1{
     margin: 9px;
     margin-top: 35px;
     animation: blink 5s infinite;
+}
+.eye-left-1, .eye-right-1{
+    margin-top: 43px;
 }
 
 /* glasses */
@@ -163,7 +360,6 @@ h1{
 /* BODY */
 .body{
     position: absolute;
-    background-color: #699C61;
     margin-top: 80px;
     width: 140px;
     height: 130px;
@@ -172,11 +368,42 @@ h1{
     border-top-right-radius: 42%;
     z-index: 10;
 }
+.body-decoration-1{
+    background-color: #758CA9;
+}
+.body-decoration-2{
+    background-color: #699C61;
+}
+.body-decoration-3{
+    background-color: #E7ADCA;
+}
+
+.body-1{
+    height: 160px;
+    border-top-left-radius: 44%;
+    border-top-right-radius: 40%;
+}
+.body-3{
+    height:120px;
+    width: 130px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
 .body::after{
-    content:"";
     position: absolute;
     background-color: black;
     width: 140px;
+}
+.body-1::after{
+    content:"";
+    height: 12px;
+    border: 1px solid black;
+    margin-top: 146px;
+    margin-left:-1px;
+}
+.body-2::after{
+    content:"";
     height: 15px;
     border: 1px solid black;
     margin-top: 120px;
@@ -186,6 +413,57 @@ h1{
     border-bottom-right-radius: 7%;
     border-bottom-left-radius: 7%;
 }
+/* .body-3::after{
+    content:"";
+    background-color: #E7ADCA;
+} */
+
+.collar{
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 44px;
+    width: 48px;
+    height: 18px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 0 30px 30px;
+}
+.buttons{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    width: 9px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #D66938;
+    margin-top: 18px;
+}
+.body-decoration-bottom{
+    position: absolute;
+    margin-top: 138px;
+    margin-left:-1px;
+    background-color: #E7ADCA;
+    width: 140px;
+    height: 6px;
+    border: 1px solid black;
+}
+.body-decoration-middle{
+    position: absolute;
+    margin-top: -5px;
+    margin-left:64px;
+    background-color: #E7ADCA;
+    width: 8px;
+    height: 149px;
+    border: 1px solid black; 
+}
+
+
 .arm-left{
     position: absolute;
     margin-top: 40px;
@@ -195,6 +473,20 @@ h1{
     position:absolute;
     margin-top: 45px;
     margin-left: 146px;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+.arm-right-1{
+    position:absolute;
+    margin-top: 51px;
+    margin-left: 146px;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+.arm-right-3{
+    position:absolute;
+    margin-top: 51px;
+    margin-left: 136px;
     transform: rotate(-90deg);
     z-index: -1;
 }
@@ -210,7 +502,6 @@ h1{
 .sleeve-2{
     width: 22px;
     height: 15px;
-    background-color:#699C61;
     border-right: 1px solid black;
     border-left: 1px solid black;
     border-top: 0px;
@@ -221,13 +512,13 @@ h1{
 .hand{
     width: 18px;
     height: 10px;
-    background-color:#E7ADCA;
     border: 1px solid black;
     border-top:0px;
     margin-left: 3px;
     border-bottom-left-radius: 60%;
     border-bottom-right-radius: 60%;
 }
+
 .legs{
     position:absolute;
     /* background-color:purple; */
@@ -235,15 +526,16 @@ h1{
     height: 65px;
     margin-top: 200px;
 }
+.legs-3{
+    margin-left: -10px;
+}
 .left-leg{
-    background-color: #F4C748;
     position:absolute;
     border:1px solid black;
     width: 60%;
     height: 100%;
 }    
 .right-leg{
-    background-color: #e7aa39;
     position:absolute;
     border:1px solid black;
     border-left: 10px solid black;
@@ -251,6 +543,34 @@ h1{
     height: 100%;
     margin-left: 60%;
 }
+.left-leg-decoration-1{
+    margin-left: 6px;
+    width: 50%;
+    background-color: #F4C748;
+}
+.right-leg-decoration-1{
+    width: 35%;
+    background-color: #F4C748;
+    border-left: 1px solid black;
+}
+.left-leg-decoration-2{
+    background-color: #F4C748;
+}
+.right-leg-decoration-2{
+    background-color: #e7aa39;
+}
+.left-leg-decoration-3{
+    margin-left: -15px;
+    width: 45px;
+    background-color: #699C61;
+}
+.right-leg-decoration-3{
+    width: 40px;
+    margin-left: 32px;
+    background-color: #699C61;
+    border-left: 1px;
+}
+
 .shoes{
     position:absolute;
     margin-top: 65px;
@@ -279,11 +599,11 @@ h1{
 
 /* LEASH */
 .leash{
-    position:absolute;
+    position: absolute;
     width: 320px;
     height: 10px;
     margin-left: 150px;
-    margin-top: 230px;
+    margin-top: 353px;
     transform:rotate(50deg);
 }
 .leash::before{
@@ -293,19 +613,88 @@ h1{
     text-decoration-style: wavy;
     text-decoration-color: black;
     text-decoration-line: underline;
-    animation: leash 1s linear infinite;
+    animation: leash  1s linear infinite;
+}
+.leash-3{
+    margin-top: 360px;
 }
 
 /* PLANT */
 .plant{
     /* background-color:black; */
+    position: absolute;
     width: 70px;
     height: 140px;
-    margin-left: 110px;
-    margin-top: 170px;
+    margin-left: 280px;
+    margin-top: 260px;
     display:flex;
     justify-content: center;
 }
+/* Left panel */
+.flower-container{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.stem{
+    position: absolute;
+    background-color: black;
+    width: 1px;
+    height: 70px;
+}
+.flower{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.petal-1, .petal-2, .petal-3, .petal-4{
+    width:16px;
+    height: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.petal-1, .petal-4{
+    background-color:black;
+}
+.petal-3, .petal-2{
+    background-color: #758CA9;
+}
+.flower-center{
+    position: absolute;
+    width:12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #F4C748;
+    margin-top: 10px;
+}
+.leaves{
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    margin-top:45px;
+    display: flex;
+    justify-content: center;
+}
+.leaf-1, .leaf-2{
+    width: 14px;
+    height: 8px;
+    border: 1px solid black;
+    background-color:#699C61;
+    border-radius: 50%;
+}
+.leaf-1{
+    transform: rotate(25deg);
+}
+.leaf-2{
+    transform: rotate(-25deg);
+}
+
+/* Middle panel  */
 .cactus{
     position: absolute;
     background-color:#699C61;
@@ -347,6 +736,28 @@ h1{
     display:flex;
     justify-content:space-between;
 }
+.strands-set-plant{
+    position:absolute;
+    left:5px;
+}
+.trunk{
+    background-color: #F4C748;
+    position:absolute;
+    width:13px;
+    height:50px;
+    top:10px;
+    left:26px;
+    border:1px solid black;
+}
+.strand-plant{
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    border-radius: 50%;
+    border-top: 10px solid black;
+}
+
+/* Plant pot */
 .plant-pot{
     position: absolute;
     border: 1px solid black;
@@ -355,8 +766,31 @@ h1{
     width: 70px;
     height: 60px;
     margin-top: 80px;
+}
+.plant-pot-1{
+    background-color: #E7ADCA;
+    height:70px;
+    margin-top: 70px;
+}
+.plant-pot-2{
     background-color: #F4C748;
 }
+.plant-pot-3{
+    background-color: #D66938;
+    height: 80px;
+    margin-top: 60px;
+}
+.plant-pot-1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    margin-left: -1px;
+    margin-top: -50px;
+    background-color: #F4C748;
+    border: 1px solid black;
+}
+
 .plant-pot::before{
     content:"";
     position: absolute;
@@ -411,10 +845,11 @@ h1{
     animation-timing-function: linear; 
 }
 
+
 /* ANIMATIONS */
 @keyframes leash {
     0% {
-        transform: translateX(-1px);
+        transform: translateX(-4px);
     }
     100% {
         transform:translateX(-20px);
