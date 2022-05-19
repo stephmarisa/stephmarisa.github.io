@@ -13,9 +13,13 @@ burnt orange:
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: #fffefa;
+}
 h1{
     text-align: center;
     padding-top: 100px;
+    font-family: 'Source Code Pro', monospace;
 }
 .main-container{
     display:flex;
