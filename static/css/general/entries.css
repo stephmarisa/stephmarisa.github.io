@@ -1,0 +1,49 @@
+/* All entries */
+body{
+    /* background-color: #e4d5cc; */
+    background-color: #dce4cc;
+}
+.main-container{
+    padding: 120px 250px 120px 250px;
+}
+.blog-header h1{
+    font-size: 40px;
+}
+.proj-main-img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* Overview section */
+.blog-overview-container{
+    display:flex;
+    /* background-color:green; */
+}
+.blog-overview-left{
+    flex: 1;
+    /* background-color: lavender; */
+    display:flex;
+    margin-right:60px;
+}
+.blog-overview-left-left{
+    margin-right:60px;
+    /* background-color:red; */
+}
+/* .blog-overview-left-right{
+    background-color:purple;
+} */
+.blog-overview-right{
+    flex: 1;
+    /* background-color: lightblue; */
+}
+.blog-footer{
+    width: 100%;
+    height: 400px;
+}
+a.simple-button:hover{
+    background-color:black;
+    color: #dce4cc;
+}
+
+
+/* Entry 1 */
