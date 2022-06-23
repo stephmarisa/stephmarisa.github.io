@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Stephanie Chui</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- modernizr -->
+    <script src="../../js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+        
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li><a href="../../index.html">Main</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+    
+    <!-- top-bar -->
+    <div class="top-bar">
+        <h1>Digital Aquarium</h1>
+        <p>an interactive digital aquarium installation</p>
+    </div>
+    <!-- end top-bar -->
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <div class="col-md-12">
+            <img src="aquariumgif.gif" alt="" class="img-responsive" width = 95%/>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <h3 class="text-uppercase">Digital Aquarium</h3>
+            <h5>About the concept and my process</h5>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-9">
+            <p>For this project, I built a motion sensing interactive aquarium. 
+                My initial intent with this was to build a backdrop for a dance showcase that ended up being cancelled due to COVID-19. 
+                The original plan I had in mind was to set up a particle system as a backdrop that would change depending on the dancers movement. 
+                As both a dancer and a frequent audience member, I believe the digital media and lighting can really make or break the performance. 
+                All of the pieces I have been a part of in my many years of dance have always had preprogrammed lighting and design cues. 
+                With this piece, I wanted to create a digital media backdrop to enhance the dancer’s movement in real time.  </p>
+
+            <p>Since I don’t own a motion tracking camera such as a Kinect, I had to make due with my regular FaceTime camera. 
+                This was definitely the biggest challenge, but I learned that motion could be tracked by taking the difference between two frames captured at slightly different time steps. 
+                After some filtering and other preprocessing, I was able to track the main blobs created by the moving figure and alter the movement of the particles based off of these positions. 
+                The clips below show the process of creating tracked blobs and the next iteration where I played with particles that flowed towards my movement. </p>
+
+            <div class="h-30"></div>
+            <p><img src = "blobs.gif" width = 65%></p>
+            <div class="h-30"></div>
+            <p><img src = "particles.gif" width = 65%></p>
+            <div class="h-30"></div>
+
+            <p>Unfortunately with the pandemic, being able to present this in a live performance was no longer a possibility. 
+                In turn, I decided to still play around with the program I built and see what interesting installation I could still build at home with my mini projector and a white bed sheet.  
+                Due to my projector’s capacity and the size of the space I had to make this installation, I decided to turn the particle system backdrop into an aquarium where the “fish” would move based on the position of the shadow of the figure in front of it.  
+                I also tried another iteration of projecting this on my floor. While I do hope to one day implement my original plan on a stage, I truly enjoyed the process and outcome of this piece. </p>
+        </div>
+
+        <div class="col-md-3">
+            <ul class="cat-ul">
+                <li><i class="ion-ios-circle-filled"></i> Interaction Design</li>
+                <li><i class="ion-ios-circle-filled"></i> Motion Detection</li>
+                <li><i class="ion-ios-circle-filled"></i> Generative Art</li>
+            </ul>
+            <div class="h-10"></div>
+        </div>
+    </div>
+    <!-- end main-container -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Contact me at: s.chui@wustl.edu</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="../../js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/animated-headline.js"></script>
+    <script src="../../js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="../../js/custom.js"></script>
+
+</body>
+
+</html>
